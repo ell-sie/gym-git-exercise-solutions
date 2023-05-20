@@ -813,3 +813,74 @@ branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/squashing)
 ```
+# Bundle 5
+## Exercise 1
+```
+https://ell-sie.github.io/Gym-Git-Exercise-Solutions/
+```
+## Exercise 2
+```
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git clone https://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@github.com/ell-sie/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 110, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 110 (delta 7), reused 7 (delta 6), pack-reused 100
+Receiving objects: 100% (110/110), 1.95 MiB | 198.00 KiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ ls
+Bundle-1   faq.html            home.html      team.html
+Readme.md  git-cafe-exercise/  services.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ cd git-cafe-exercise/
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ ls
+README.md  css/     index-1.html  index-3.html  index.html
+bat/       images/  index-2.html  index-4.html  js/
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ vi index.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m 'welcome to restaurant'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push
+Everything up-to-date
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ vi index.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git add .
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git commit -m 'welcome to restaurant'
+[main 8f0a1af] welcome to restaurant
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ell-sie/git-cafe-exercise.git
+   4f8ab36..8f0a1af  main -> main
+
+```
