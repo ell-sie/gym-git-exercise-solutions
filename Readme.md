@@ -723,4 +723,93 @@ remote: Resolving deltas: 100% (35/35), done.
 To https://github.com/ell-sie/the-gym-1.git
    87beef1..6b31a42  main -> main
 ```
+## Exercise 2
+```
 
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$ ls
+Bundle-1  Readme.md  faq.html  home.html  services.html  team.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$ vi footer.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$ git add .
+warning: LF will be replaced by CRLF in footer.html.
+The file will have its original line endings in your working directory
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit 'update footer'
+error: pathspec 'update footer' did not match any file(s) known to git
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$ git commit -m 'update footer'
+[ft/footer 8fef7eb] update footer
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$   git push --set-upstream origin ft/footer
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (22/22), 3.46 KiB | 1.73 MiB/s, done.
+Total 22 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/ell-sie/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 7b4467c..8fef7eb
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/squashing)
+$ git commit -m 'footer changes squashing'
+[ft/squashing 8b2012b] footer changes squashing
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/squashing)
+$   git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/ell-sie/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (ft/squashing)
+```
