@@ -75,7 +75,7 @@ Deleted branch test (was 04aba68).
 
 ```
 
-##Exercise 2
+## Exercise 2
 
 ```
 
@@ -233,7 +233,7 @@ remote:
 To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 ```
-##Exercise 2
+## Exercise 2
 
 ```
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/services-redesign)
@@ -359,42 +359,6 @@ Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/services-redesign)
 $ git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
-
-Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (main)
-$ git checkout -D ft/services-redesign
-error: unknown switch `D'
-usage: git checkout [<options>] <branch>
-   or: git checkout [<options>] [<branch>] -- <file>...
-
-    -b <branch>           create and checkout a new branch
-    -B <branch>           create/reset and checkout a branch
-    -l                    create reflog for new branch
-    --guess               second guess 'git checkout <no-such-branch>' (default)
-    --overlay             use overlay mode (default)
-    -q, --quiet           suppress progress reporting
-    --recurse-submodules[=<checkout>]
-                          control recursive updating of submodules
-    --progress            force progress reporting
-    -m, --merge           perform a 3-way merge with the new branch
-    --conflict <style>    conflict style (merge, diff3, or zdiff3)
-    -d, --detach          detach HEAD at named commit
-    -t, --track[=(direct|inherit)]
-                          set branch tracking configuration
-    -f, --force           force checkout (throw away local modifications)
-    --orphan <new-branch>
-                          new unparented branch
-    --overwrite-ignore    update ignored files (default)
-    --ignore-other-worktrees
-                          do not check if another worktree is holding the given ref
-    -2, --ours            checkout our version for unmerged files
-    -3, --theirs          checkout their version for unmerged files
-    -p, --patch           select hunks interactively
-    --ignore-skip-worktree-bits
-                          do not limit pathspecs to sparse entries only
-    --pathspec-from-file <file>
-                          read pathspec from file
-    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
-
 
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (main)
 $ git branch -d ft/services-redesign
@@ -538,9 +502,9 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
    4fb0b17..e7c9d6d  ft/services-redesign -> ft/services-redesign
 ```
-#Bundle 3
+# Bundle 3
 
-##Exercise 1
+## Exercise 1
 ```
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/team-page)
 $ git checkout main
@@ -633,43 +597,39 @@ To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin ft/contact-page
 
-
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/contact-page)
-OAOAOA$ ^C
-
-OALenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/contact-page)
 $  git push --set-upstream origin ft/contact-page
 
-OAEnumerating objects: 4, done.
-OACounting objects: 100% (4/4), done.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
-OAWriting objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
+Writing objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-OAremote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 remote:
-OAremote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
 remote:      https://github.com/ell-sie/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
-OAremote:
+remote:
 To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
-OA * [new branch]      ft/contact-page -> ft/contact-page
-OAbranch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
 
-OALenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/contact-page)
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/contact-page)
 $
-OA
-OALenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/contact-page)
-OA$ git checkout -b ft/faq-page
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/contact-page)
+$ git checkout -b ft/faq-page
 Switched to a new branch 'ft/faq-page'
-OA
-OALenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/faq-page)
-OA$ vi faq.html
 
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/faq-page)
-OA$ git add .
-OAwarning: LF will be replaced by CRLF in faq.html.
+$ vi faq.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/faq-page)
+$ git add .
+warning: LF will be replaced by CRLF in faq.html.
 The file will have its original line endings in your working directory
-OA
+
 Lenovo@DESKTOP-6LCGN4B MINGW64 ~/git-exercises (ft/faq-page)
 $ git commit -m 'contact page'
 [ft/faq-page aabb138] contact page
@@ -716,4 +676,50 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
    ebd739c..ec946e3  ft/team-page -> ft/team-page
 
+```
+# Bundle 4
+## Exercise 1
+```
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git remote add git-copy https://github.com/ell-sie/the-gym-1.git
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ ls
+Bundle-1  Readme.md  faq.html  home.html  services.html  team.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ vi home.html
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git add .
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git commit -m 'work'
+[main 8008797] work
+ 1 file changed, 1 insertion(+)
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ell-sie/Gym-Git-Exercise-Solutions.git
+   562cba7..8008797  main -> main
+
+Lenovo@DESKTOP-6LCGN4B MINGW64 ~/Gym-Git-Exercise-Solutions (main)
+$ git push git-copy main
+Enumerating objects: 66, done.
+Counting objects: 100% (66/66), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (65/65), 13.52 KiB | 4.51 MiB/s, done.
+Total 65 (delta 35), reused 57 (delta 31), pack-reused 0
+remote: Resolving deltas: 100% (35/35), done.
+To https://github.com/ell-sie/the-gym-1.git
+   87beef1..6b31a42  main -> main
 ```
